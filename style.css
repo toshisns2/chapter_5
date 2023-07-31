@@ -1,8 +1,7 @@
-.main {
+/* .main {
     width: 640px;
     margin: 0 auto;
-    border: 1px solid black;
-}
+} */
 
 
 /* ボタン */
@@ -21,13 +20,6 @@
     transition: .25s;
 }
 
-/* 矢印付きボタン */
-.btn--arrow-right {
-    position: relative;
-    padding-right: 2em;
-    padding-left: 1.38em;
-}
-
 .btn:focus,
 .btn:hover {
     background-color: #fff;
@@ -35,11 +27,26 @@
     color: #e25c00;
 }
 
+/* 大ボタン */
+.btn--large {
+    width: 340px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.375em;
+}
+
+/* 矢印付きボタン */
+.btn--arrow-right {
+    position: relative;
+    padding-right: 2em;
+    /* padding-left: 1.38em; */
+}
+
 .btn--arrow-right::after {
     content: '\f061';
     position: absolute;
     top: 50%;
-    right: 3em;
+    right: .83em;
     font-family: 'Font Awesome 5 free';
     font-weight: 900;
     transform: translateY(-50%);
