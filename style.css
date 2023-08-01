@@ -39,7 +39,7 @@
 .btn--arrow-right {
     position: relative;
     padding-right: 2em;
-    /* padding-left: 1.38em; */
+    padding-left: 1.38em;
 }
 
 .btn--arrow-right::after {
@@ -50,4 +50,78 @@
     font-family: 'Font Awesome 5 free';
     font-weight: 900;
     transform: translateY(-50%);
+}
+
+/* アイコン付き小ボタン */
+.before-icon-btn {
+    /* position: relative; */
+    display: inline-block;
+    padding: .2em .3em;
+    border: 1px solid currentColor;
+    color:#e25c00;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.before-icon-btn:focus,
+.before-icon-btn:hover {
+    background-color: #e25c00;
+    color: #fff;
+}
+
+.before-icon-btn::before {
+    display: inline-block;
+    margin-right: .5em;
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+}
+
+.before-icon-btn--download::before {
+    content: '\f019';
+}
+
+.before-icon-btn--excel::before {
+    content: '\f1c3';
+}
+
+.after-icon-btn {
+    /* position: relative; */
+    display: inline-block;
+    padding: .2em .3em;
+    border: 1px solid currentColor;
+    color:#e25c00;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.after-icon-btn:focus,
+.after-icon-btn:hover {
+    background-color: #e25c00;
+    color: #fff;
+}
+
+.after-icon-btn::after {
+    display: inline-block;
+    margin-left: .5em;
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+}
+
+.after-icon-btn--download::after {
+    content: '\f019';
+}
+
+/* テキストを前後に付ける */
+.before-text {
+    color:#e25c00;
+    background-color: aqua;
+}
+ 
+.before-text::before {
+    display: inline-block;
+    margin-right: .3em;
+}
+
+.before-text--cancel::before{
+    content: '×';
 }
