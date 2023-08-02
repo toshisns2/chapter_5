@@ -125,3 +125,31 @@
 .before-text--cancel::before{
     content: '×';
 }
+
+.label {
+    display: inline-block;
+    padding: .2em .3em;
+    background-color: #e25c00;
+    color: #fff;
+    font-size: .75em;
+    font-weight: bold; 
+    border: 2px solid transparent;
+    border-radius: 1em;
+}
+
+.label--warning {
+    background-color: #f1de00;
+    color:#000;
+}
+
+.label--link {
+    text-decoration: none;
+    transition: .25s;
+}
+
+.label--link:focus ,
+.label--link:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color:#e25c00;
+}
